@@ -1,0 +1,44 @@
+
+
+#jumbotron {
+  width: 100%;
+  height: 60%;
+  position: absolute;
+  left: 0;
+  top: 0;
+  background-color: lightgrey;
+}
+ #animals {
+   position: absolute;
+   top: 60%;
+   left: 0;
+   bottom: 0;
+   width: 50%;
+   background-color: green;
+   display: inline-block;
+ }
+
+ #animals h2 {
+   text-align: center;
+ }
+
+ #left-animals {
+   float: left;
+   font-size: 1.4em;
+   display: inline-block;
+ }
+ #right-animals {
+   right: 0;
+   font-size: 1.4em;
+   display: inline-block;
+ }
+
+ #animal-info {
+   position: absolute;
+   padding: .4em;
+   top: 60%;
+   right: 0;
+   bottom: 0;
+   width: 50%;
+   background-color: lightgreen;
+ }
