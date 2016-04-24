@@ -1,22 +1,19 @@
-/* The Page function creates a "page" for a type of animal. */
-/* The first input is the type of animal as a String. */
-/* The second input is a function that will run when the page is called. */
+// This will create a "page" and run the callback when your page is navigated to.
 
-Page(/* Your animal type */, function(){
+Page("", function(){ // Fill in your animal Type.
 
-  /* Change $("img") src to one of your animals. */
+  $("img").attr("src", ""); // Change img src to one of your animal image urls.
 
-  /* Change $(".type") text to the type of your animals. */
+  $("h2").text(""); // Change h2 text to the type of your animals.
 
-  /* Make an array of animals. */
-  /* Fill in the name, info, and image url. */
-  var animals = [
-    {name: "", image: "", info: ""}
+  var animals = [ // Make an array of animals.
+    {name: "", image: "", info: ""}, // Fill in the name, info, and image url.
+    {name: "", image: "", info: ""},
+    {name: "", image: "", info: ""} // Make anywhere between 3 and 9 animals.
   ];
 
-  /* Loop over your animals.*/
-  for(var i = 0; i < animals.length; i++){
-    /* Pass each animal object into the addAnimal function. */
-    addAnimal(animals[i]);
+  for(var i = 0; i < animals.length; i++){ // Loop over your animals.
+    addAnimal(animals[i]); // Pass each animal object into the addAnimal function.
   }
+
 });

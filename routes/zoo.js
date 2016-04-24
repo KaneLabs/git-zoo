@@ -1,3 +1,5 @@
+// This is the "homepage" for the website.
+
 Page("Zoo", function(){
 
   $("img").attr("src", "http://i.imgur.com/bF4DV8c.jpg");
