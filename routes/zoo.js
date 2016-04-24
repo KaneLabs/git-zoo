@@ -15,4 +15,7 @@ Page("Zoo", function(){
   }
 });
 
+// This sets the first route as Zoo.
+// Don't copy this part for other routes.
+$(".link")[0].classList.add("active");
 routes["Zoo"]();
