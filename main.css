@@ -1,0 +1,114 @@
+/* Imports the Open Sans font */
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Open Sans'), local('OpenSans'), url(https://fonts.gstatic.com/s/opensans/v13/cJZKeOuBrn4kERxqtaUH3VtXRa8TVwTICgirnJhmVJw.woff2) format('woff2');
+  unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2212, U+2215, U+E0FF, U+EFFD, U+F000;
+}
+
+/* Reset for html and body. */
+html, body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  border: 0;
+  font-size: 0;
+}
+
+body {
+  background: rgb(200,200,200);
+}
+
+nav {
+  box-sizing: border-box;
+  padding: 0px 20px;
+  height: 42px;
+  width: 100%;
+  background: rgb(40,40,40);
+  color: rgb(200,200,200);
+}
+
+.link {
+  cursor: pointer;
+  display: inline-block;
+  padding: 10px;
+  font: 16px Open Sans;
+}
+
+header {
+  box-sizing: border-box;
+  padding: 26px;
+  height: 300px;
+  width: 100%;
+  text-align: center;
+}
+
+img {
+  height: 100%;
+  border: 1px solid rgb(60,60,60);
+}
+
+main, aside {
+  box-sizing: border-box;
+  display: inline-block;
+  height: calc(100% - 342px);
+}
+
+main {
+  vertical-align: top;
+  width: calc(161800% / 2618);
+}
+
+h2 {
+  font: 36px Helvetica;
+  margin: 0;
+  padding: 20px;
+  text-align: center;
+  background: rgb(60,60,60);
+  color: rgb(220,220,220);
+  border-bottom: 1px solid rgb(40,40,40);
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+li {
+  box-sizing: border-box;
+  padding: 15px;
+  font: 16px Open Sans;
+  display: inline-block;
+  width: calc(100% / 3);
+  border: 1px solid rgb(230,230,230);
+}
+
+.selected {
+  background: rgb(230,230,230);
+}
+
+aside {
+  position: relative;
+  width: calc(100000% / 2618);
+  background: rgb(80,80,80);
+  color: rgb(200,200,200);
+}
+
+.info {
+  font: 16px Open Sans;
+  position: absolute;
+  top: 0;
+  left: 0;
+  box-sizing: border-box;
+  height: 100%;
+  width: 100%;
+  padding: 25px;
+  transition: .2s;
+  opacity: 0;
+}
+
+.show {
+  opacity: 1;
+}
