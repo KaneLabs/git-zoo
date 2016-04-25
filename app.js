@@ -16,7 +16,7 @@ $("ul").on("click", function(e){ // List click event handler.
     if($(".selected")[0]) $(".selected").removeClass("selected"); // If there is a selected animal remove selected class.
     tar.addClass("selected"); // Add selected class to target.
     if($(".show")[0]) $(".show").removeClass("show"); // If there is a shown item remove show class.
-    $("#" + tar.text()).addClass("show"); // Add show class to related info element.
+    $("#" + tar.text().split(" ").join("")).addClass("show"); // Add show class to related info element.
     $("img").attr("src", images[tar.text()]); // Change image to stored animal image.
   }
 });
@@ -37,7 +37,7 @@ function Page(type /*String*/, callback /*Function*/){
 function addAnimal(animal){
   var name = capFirstLetter(animal.name), // Capitalize the first letter of animal name.
     li = $("<li class='animal'>" + name + "</li>"), // Create list element.
-    info = $("<div class='info' id='" + name + "'>" + animal.info + "</div>"); // Create info element.
+    info = $("<div class='info' id='" + name.split(" ").join("") + "'>" + animal.info + "</div>"); // Create info element.
   $("ul").append(li); // Add list element to list.
   $("aside").append(info); // Add input and info into the aside.
   if(!images[name]) images[name] = animal.image; // Add image to object to be used later.
